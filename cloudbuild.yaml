@@ -7,7 +7,7 @@ steps:
 
 # Deploy to App Engine
   - name: 'gcr.io/cloud-builders/gcloud' 
-    args: ['app', 'deploy', 'app.yaml', '--version', '${_PROJECT_ID}', '--project', '${_VERSION}'] 
+    args: ['app', 'deploy', 'app.yaml', '--version', '${_VERSION}', '--project', '${_PROJECT_ID}'] 
 # Specify substitutions for dynamic values
 substitutions:
   _PROJECT_ID: reactexpenseapp
